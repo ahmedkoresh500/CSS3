@@ -1,0 +1,66 @@
+/*
+    1- transform: rotate( + - degree )          =>> lesson 10
+    2- transform: scale( width , height )       =>> lesson 11   width, height =>> numbers
+    3- transform: translate( width , height )   =>> lesson 12   width, height =>> px
+    4- transform: skew()
+*/
+
+*{
+    /* -webkit-box-sizing: content-box; */
+    -webkit-box-sizing: border-box;
+}
+.container{
+    width: 400px;
+    height: 200px;
+    margin: 100px auto;
+    padding: 10px;
+    background-color: #EEE;
+    border: 1px solid #CCC;
+    overflow: visible;      /* default value */
+                            /* [overflow: hidden;]   =>> [transform: translate()]   =>> never go out div*/
+}
+
+.translate{
+    height: 180px;
+    color: #FFF;
+    background-color: #080;
+    text-align: center;
+    transition: all 0.5s ease-in-out;   /* in element =>> not in hover =>> transition when hover */
+}
+
+.translate:hover{
+    -webkit-transform: translate( 40px , 0px );
+    -moz-transform: translate( 40px , 0px );
+    transform: translate( 40px , 0px );
+}
+
+/* merging  =>> [transform: rotate()] & [transform: scale()] [transform: translate()] */
+.translate:hover{
+    -webkit-transform: translatey( -100px ) scale(.60) rotate(20deg);
+    -moz-transform: translatey( -100px ) scale(.60) rotate(20deg);
+    transform: translatey( -100px ) scale(.60) rotate(20deg);
+}
+
+
+/*
+    * transform: none;      =>> default value       =>> to reset transform
+    
+    * transform: translate( width , height )
+    * transform: translate( x , y )
+    * transform: translate( horizontal , vertical )
+
+    * [width = x]     [+] =>> move right    [-] =>> move left
+    * [height = y]    [+] =>> move down     [-] =>> move up
+
+
+    * transform: scale(2)           =   transform: scale( 2 , 2 )
+    * transform: translate(2px)     !=  transform: translate(2px , 2px)  
+
+    * transform: translate(2px)     =   transform: translate(2px , 0px)  
+
+                                                =>> 2px for [x = width]
+
+    * transform: translatex( 5px )
+    * transform: translatey( 5px )
+
+*/

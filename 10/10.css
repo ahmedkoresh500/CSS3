@@ -1,0 +1,26 @@
+div{
+    width: 340px;
+    margin: 100px auto;
+    padding: 10px;
+    background-color: #EEE;
+    border: 1px solid #CCC;
+    font-family: arial , tahoma;
+    text-align: center;
+    
+    transition: all 0.5s ease-in-out;   /* in element =>> not in hover =>> transition when hover */
+}
+
+div:hover{
+    transform: rotate(360deg);
+}
+
+/*
+    * transform: none;      =>> default value   =>> to reset transform
+
+    * transform: rotate(+ - degree );
+
+    * ( + )     =>> clockwise direction.            نفس اتجاه عقارب الساعه
+    * ( - )     =>> counter clockwise direction.    عكس اتجاه عقارب الساعه
+
+    * width: auto;      =>> default value   = width of screen.
+*/

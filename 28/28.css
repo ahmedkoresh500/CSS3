@@ -1,0 +1,62 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div.container{
+    width: 800px;
+    margin: 50px auto;
+    padding: 10px;
+    background-color: #eee;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;     /* justify-content: space-between */
+}
+
+
+
+div.container div{
+    width: 200px;
+    height: 60px;
+    margin: 5px;
+    padding: 10px;
+    color: #fff;
+    background: #080;
+    /* line-height: 35px; */    /* in child  =>> to center vertically  =>> half [height + padding] */
+    /* text-align: center; */   /* in child  =>> to center horizontally */
+}
+
+div.container div:first-of-type{
+    background: #080;
+}
+
+div.container div:nth-of-type(2){
+    background: #f00;
+}
+
+div.container div:nth-of-type(3){
+    background: #00f;
+}
+
+
+div.test{
+    display: inline-block;
+}
+
+
+/*
+    * flex-flow: flex-direction, flex-wrap           =>> short hand code  الكود المختصر
+
+    * flex-flow: row nowrap;        =>> default
+
+    * justify-content:
+                    flex-start   =>> default    =>> the start of line   =>> depending on direction
+                    flex-end                    =>> the end of line     =>> depending on direction
+                    center
+                    space-between               =>> space between [double]
+                    space-around                =>> equal spaces between and around
+                    space-evenly                =>> space between [not double]
+*/
+
+

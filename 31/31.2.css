@@ -1,0 +1,57 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    direction: ltr;
+}
+
+
+div.container{
+    width: 700px;
+    height: 500px;
+    margin: 50px auto;
+    background: #d0d0d0;
+    display: flex;
+}
+
+div.container div{
+    width: 150px;
+    max-height: 100px;
+    padding: 10px;
+    color: #fff;
+}
+
+/* ============================== */
+div.container .one{
+    background: #080;
+}
+
+div.container .two{
+    background: #f00;
+    flex: 0 1 auto;             /* [flex]   =>> default */
+}
+
+div.container .three{
+    background: #f0f;
+    flex: 2 1 auto;             /* flex */
+}
+
+div.container .four{
+    background: #00f;
+}
+
+
+/*
+    * flex: flex-grow | flex-shrink | flex-basis
+
+    * flex: 0 1 auto            =>> default
+
+
+    [1] width: 150px;
+    [2] flex-basis:
+                    200px       [width]  =>> [150 : 200]
+                    100px       [width]  =>>  [< 100]
+*/

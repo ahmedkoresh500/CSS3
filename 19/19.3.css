@@ -1,0 +1,60 @@
+/*
+    * perspective-origin: X , Y
+        =>> vanishing point =>> نقطه التلاشي  
+        =>> الموقع اللي ببص منه
+*/
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+div:first-of-type{          /* first div */
+    perspective: 500px;
+    perspective-origin: 50% 50%;
+}
+
+div:nth-of-type(2){         /* middle div */
+    perspective: 300px;
+    perspective-origin: 100% 100%;
+}
+
+div:last-of-type{          /* last div */
+    perspective: 200px;
+    perspective-origin: left;   /* [left = 0] & [right = 100] */
+}
+
+
+
+img{
+    display: block;
+    margin: 20px auto;
+    transition: all 1s ease-in-out;
+}
+
+img:hover{
+    transform: translatez(100px);
+}
+
+/*
+    * perspective: none;            =>> default value
+    * perspective-origin: 50% 50%   =>> default value
+
+    * perspective-origin: X , Y;
+    * perspective-origin: width , height;
+    * perspective-origin: horizontal , vertical;
+
+    * accept =>> 
+        1- px
+        2- percentage
+        3- directions [left , right , top , bottom , center]
+
+    * perspective-origin: left      =>> left =  0%
+    * perspective-origin: right     =>> right = 100%
+    * perspective-origin: center    =>> center = 50%
+
+*/

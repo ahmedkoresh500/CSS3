@@ -1,0 +1,29 @@
+img{
+    width: 250px;
+    height: 250px;
+    
+    margin: 50px;       
+    /* 
+        * accurate way to center image:
+        =>> i should use it in div and centering the div by [margin: auto;]
+        
+        * not accurate way to center image:
+        =>> img{margin-right: 400px;}
+        
+        =>> img{ margin: auto;}         =>> doesn't center the img
+        =>> img{ text-align: center; }  =>> doesn't center the img
+
+    
+    */
+    
+    padding: 5px;
+    border: 1px solid #CCC;
+    border-radius: 50%;
+    
+    transition: all 0.5s ease-in-out;    /* in element =>> not in hover =>> transition when hover */
+}
+
+img:hover{
+    box-shadow: 10px 10px 30px #E4E4E4,
+                -10px -10px 30px #E4E4E4;
+}

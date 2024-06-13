@@ -1,0 +1,41 @@
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+div:first-of-type{          /* first div */
+    perspective: 500px;
+    /* perspective =>> distance between elements and my eyes*/
+}
+
+div:nth-of-type(2){         /* middle div */
+    perspective: 300px;
+    /* perspective =>> distance between elements and my eyes*/
+}
+
+div:last-of-type{          /* last div */
+    perspective: 200px;
+    /* perspective =>> distance between elements and my eyes*/
+}
+
+
+img{
+    display: block;
+    margin: 50px auto;
+    transition: all 1s ease-in-out;
+}
+
+img:hover{
+    transform: translatez(100px);
+}
+
+/*
+    * perspective: none;            =>> default value
+    * perspective-origin: 50% 50%   =>> default value
+
+*/

@@ -1,0 +1,34 @@
+div{
+    height: 200px;
+    width: 200px;
+    margin: 20px 20px;
+    background-color: #DDD;
+    display: inline-block;
+}
+
+.div1{
+    border-radius: 10px;    /* top bottom right left */
+}
+
+.div2{
+    border-radius: 50%;     /* [100px] = 50% = 60% = 90% = 100%   =>> [px or percentage] */
+}
+
+.div3{
+    border-radius: 10px 120px;   /* = [border-radius: 10px 120px 10px 120px;] */
+}
+
+.div4{
+    border-radius: 10px 120px;          /* = [border-radius: 10px 120px 10px 120px;] */
+    -webkit-border-radius: 10px 120px;  /* not equal to [border-radius: 10px 120px 10px 120px;] =>>i don't know why */
+    -moz-border-radius: 10px 120px;
+    -o-border-radius: 10px 120px;
+    -ms-border-radius: 10px 120px;
+}
+
+.div5{
+    border-top-left-radius: 100px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 150px;
+    border-bottom-left-radius: 250px;
+}

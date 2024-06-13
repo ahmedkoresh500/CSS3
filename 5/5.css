@@ -1,0 +1,61 @@
+*{
+    box-sizing: content-box;
+}
+
+section{
+    width: 940px;
+    margin: 100px auto;
+    background-color: rgb(214, 176, 176);
+}
+
+.left{
+    width: 340px;           /* or [ 20% ] */
+    color: #FFF;
+    background-color: #F00;
+    float: left;
+}
+
+.right{
+    width: 600px;           /* or [ 80% ] */
+    color: #FFF;
+    background-color: #00F;
+    float: right;
+}
+
+/*
+div{
+    padding: 10px;      = .left1 , .right1 , .left2 , .right2 , .clear{ padding: 10px; }     =>> not affect .clear{ clear: both }
+}
+*/
+
+.clear{
+    clear: both;
+}
+
+.left1{
+    padding: 10px;
+}
+
+.right1{
+    padding: 10px;
+}
+
+.left2{
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.right2{
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/*
+    * box-sizing:
+                content-box  =>> default value  =>> [ margin ] [ padding ] =>> extra size out of the element.
+                border-box                      =>> [ margin ] [ padding ] =>> the same size of the element.
+
+    * no background-color   =>> when using [float].
+    * background-color      =>> when using [display: inline-block];
+*/
+

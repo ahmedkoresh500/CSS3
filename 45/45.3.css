@@ -1,0 +1,116 @@
+/*
+    * lesson [45]: animation exercise [create swing dropdown]
+*/
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div.container{
+    width: 250px;
+    height: 50px;
+    margin: 10px;
+    font-weight: bold;
+    font-family: Arial, Tahoma;
+    text-align: center;
+    float: left;
+}
+
+div.container .box{
+    height: 50px;
+    color: #fff;
+    line-height: 50px;
+    position: relative;
+
+    z-index: 2;
+}
+
+div.container a{
+    width: 100%;                /* 100% = 250px */
+    height: 50px;
+    color: white;
+    background: #333;
+    line-height: 50px;          /* line-height = height */
+    text-decoration: none;
+    display: inline-block;
+
+    position: relative;
+    top: -50px;
+
+    z-index: 1;
+}
+
+div.container:hover a{      /* special selector way  =>> whwen hover [container]  =>> change [<a>] */
+    top: 0px;
+}
+
+
+/* ==== [1] [normal box] ==== */
+div.normal:before{
+    content: "Normal Hover";
+    margin-bottom: 10px;
+    padding: 10px;
+    display: block;
+}
+
+div.normal .box{
+    background: #62c8f8;                /* [1] twitter color */
+}
+/* ==== [1] [normal box] end ==== */
+
+
+/* ---- [2] [transition box] ----*/
+div.transition:before{
+    content: "Transition Hover";
+    margin-bottom: 10px;
+    padding: 10px;
+    display: block;
+}
+
+div.transition .box{
+    background: #3b5998;                /* [2] facebook color */
+}
+
+div.transition a{
+    transition: all 1s ease;
+}
+/* ---- [2] [transition box] end ---- */
+
+
+/* ==== [3] [animation box] ==== */
+div.animation:before{
+    content: "Animation Hover";
+    margin-bottom: 10px;
+    padding: 10px;
+    display: block;
+}
+div.animation .box{
+    background: #c8302a;                /* [3] youtube color */
+}
+
+div.animation:hover a{      /* special selector way  =>> whwen hover [animation]  =>> change [<a>] */
+    transform-origin: top;                  /* to hide space */
+    animation: swinging 10s ease;
+}
+/* ==== [3] [animation box] end ==== */
+
+
+@keyframes swinging{
+    0%{
+        transform: rotateX(-70deg);         /* [Y] must be uppercase */
+    }20%{
+        transform: rotateX(70deg);          /* [Y] must be uppercase */
+    }40%{
+        transform: rotateX(-60deg);         /* [Y] must be uppercase */
+    }60%{
+        transform: rotateX(60deg);          /* [Y] must be uppercase */
+    }80%{
+        transform: rotateX(-60deg);         /* [Y] must be uppercase */
+    }100%{
+        transform: rotateX(0deg);           /* [Y] must be uppercase */
+    }
+}
+
+

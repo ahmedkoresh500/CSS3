@@ -1,0 +1,59 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 400px;
+    height: 200px;
+    margin: 100px auto;
+    padding: 10px;
+    background-color: #EEE;
+    border: 1px solid #CCC;
+}
+
+.scale{
+    width: 380px;
+    height: 180px;
+    color: #FFF;
+    background-color: #080;
+    text-align: center;
+
+    transition: all 0.5s ease-in-out;       /* in element =>> not in hover =>> transition when hover */
+}
+
+.scale:hover{
+    -webkit-transform: scale(2, 2);
+    -moz-transform: scale(2, 2);
+    transform: scale(1.5, .8);
+}
+
+/*
+    * transform: none;      =>>     default value   =>> to reset transform
+
+    * transform: scale(width , height);
+    * transform: scale(X , Y);
+    * transform: scale(horizontal , vertical);
+
+    * [transform: scale(1 , 1);]        =>> [same scale]
+
+    * [transform: scale(2);]        =          [transform: scale(2 , 2);]
+
+    * x = width     =>> transform: scalex(2);
+    * y = height    =>> transform: scaley(2);
+
+    * [1 = once] [2 = twice]
+
+
+
+
+    
+    * [width: 400px;] [padding: 10px;]   =>>  rest width = 380px
+
+    * [.5] = [0.5]
+
+    * width: auto;      =>> default value   = width of screen.
+*/

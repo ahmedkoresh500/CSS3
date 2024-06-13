@@ -1,0 +1,47 @@
+/*
+    * [screen sizes] website  =>> to know size of all screens
+
+    * search on goole:
+    =>> [media query standard size]
+
+    * elzero advice:  =>> start with [mobile screen] then [big screen]  =>> [min-width]
+
+    * [767px] [922px] [1200px]
+*/
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div{
+    width: 32%;
+    margin-left: 1%;
+    padding: 10px;
+    color: #fff;
+    background-color: #00f;
+    font-size: 22px;
+    float: left;
+}
+
+
+@media(max-width: 640px){
+    div{
+        width: 100%;
+        margin-bottom: 5px;
+        margin-left: 0px;
+        background: rgb(238, 34, 34);
+        float: none;
+    }
+}
+
+
+@media print{
+    div{
+        color: red;
+        font-size: 24px;
+    }
+}
+
+

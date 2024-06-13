@@ -1,0 +1,47 @@
+
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    perspective: 600px;     /* to enable using 3d perspective */
+}
+
+img{
+    margin: 50px auto;
+    display: block;
+    transition: all 1s ease-in-out;
+}
+
+img:hover{
+    /* transform: translate(200px , 200px); */          /* 2D transform: translate() */
+
+    transform: translatez(-100px);                      /* short hand for translate 3d =>> will be used in animation */
+    transform: translatez(100px);                       /* short hand for translate 3d =>> will be used in animation */
+
+    /* transform: translate3d(0 , 0 , -150px); */       /* away of me */
+    transform: translate3d(100px , 100px , 100px);      /* to me */
+}
+
+/*
+    * transform: none;          =>> default value       =>> to reset transform
+
+    * trnasform: translate( x , y )         =>> 2D transform translate()
+
+    * transform: translate3d( x , y , z )   =>> 3d transform translate()
+
+    * transform: translatex(+ - px)     =>> [+] move right      =>> [-] move left
+    * transform: translatey(+ - px)     =>> [+] mover down      =>> [-] move up
+    * transform: translatez(+ - px)     =>> short hand for translate 3d =>> will be used in animation
+
+
+    * any css attribute can take inherit value    =>> the value of parent [3d perspective]
+
+    * to center image:
+        1- put it in a div {margin: 100px auto;}    =>> cauz div is block element
+        2- img{display: block; margin: 100px auto}
+
+        * img{display: inline;} =>> default value
+
+*/

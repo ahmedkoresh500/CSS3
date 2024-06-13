@@ -1,0 +1,80 @@
+/*
+    * transform: skew( Width , height ) =>> ميلان للعنصر بزوايا معينه
+*/
+*{
+    /* -webkit-box-sizing: content-box; */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 400px;
+    height: 200px;
+    margin: 100px auto;
+    padding: 10px;
+    background-color: #EEE;
+    border: 1px solid #CCC;
+    overflow: visible;  /* default value */
+                        /* [overflow: hidden;] =>> [transform:translate()] never go out div */
+}
+
+.skew{
+    height: 180px;
+    color: #FFF;
+    background-color: #080;
+    text-align: center;
+    transition: all 0.5s ease-in-out;   /* in element =>> not in hover =>> transition when hover */
+}
+
+
+.skew:hover{
+    -webkit-transform: skew(-10deg , -10deg) scale(1.2);
+    -moz-transform: skew(-10deg , -10deg) scale(1.2);
+    transform: skew(10deg , -10deg) scale(1.2);         
+}
+/* 
+    * skew [width] & [height]
+            [1] same sign   [+] or [-]    =>> skew
+
+            [2] different sign            = [transform: rotate()]
+        X = negative    =>> clockwise direction (rotate)         نفس اتجاه عقارب الساعه
+        Y = negative    =>> counter clockwise direction (rotate) عكس اتجاه عقارب الساعه
+*/
+
+
+/*
+    * transform: none       =>> default value       =>> to reset transform
+
+    1- transform: rotate(+ - deg)
+
+    2- transform: scale( number , number )
+            transform: scale(2)     =       transform: scale( 2 , 2 )
+
+    3- transform: tanslate( px , px )
+            transform: translate(10px)  !=  transform: translate( 10px , 10px)
+            transform: translate(10px)  =   transform: translate( 10px , 0px )
+
+    4- transform: skew( deg , deg )
+            transform: skew( 10deg )    !=  transform: skew(10deg , 10deg)
+            transform: skew( 10deg )    =   transform: skew(10deg , 0deg)
+
+
+
+    * deg x [+] =>> counter clockwise direction     عكس اتجاه عقارب الساعه
+            [-] =>> clockwise direction             نفس اتجاه عقارب الساعه
+
+    * deg y [+] =>> clockwise direction             نفس اتجاه عقارب الساعه
+            [-] =>> counter clockwise direction     عكس اتجاه عقارب الساعه
+
+    * transform: skewx()
+    * transform: skewy()
+
+
+    * transform: skew(width , height)
+        [width] & [height]  =>> same sign    [+] or [-] =>> skew
+                            =>> different sign          = [transform: rotate();]
+
+
+
+*/

@@ -1,0 +1,72 @@
+/* 
+    * box-shadow: Horizontal(+ -) | Vertical(+ -) | Blur(+) | Spread(+) | color | inset, outset. 
+
+    * box-shadow( width , height )
+    * box-shadow( x , y )
+    * box-shadow( horizontal , vertical )
+
+    * x [+] =>> mover right
+        [-] =>> move left
+
+    * y [+] =>> move down
+        [-] =>> move up
+
+*/
+
+div{
+    height: 200px;
+    width: 200px;
+    margin: 50px 200px;
+    padding: 10px;
+    background: #EEE;
+    
+    display: inline-block;
+    border: 1px solid #CCC;
+}
+
+.div1{
+    box-shadow: 10px 10px,
+                -10px -10px 5px;
+}
+
+.div2{
+    box-shadow: 10px 10px 10px #00F,
+                -10px -10px 10px #F00,
+                20px 20px 10px #F00;    /* not overwrite the first value */
+}
+
+.div3{
+    box-shadow: 10px 10px 10px 5px #00F,
+                -10px -10px 10px 5px #F00;
+}
+
+.div4{
+    box-shadow: 10px 10px 10px 5px #00F inset,
+                -10px -10px 10px 5px #F00 inset;
+}
+
+
+/*
+    * i can write more than two lines of values
+
+    * box-shadow: none;       =>> default value.
+
+
+    * box-shadow: horizontal(+ -) | vertical(+ -) | color   =>> the most popular = the most used.
+
+
+    box-shadow: 10px 10px       =>> Blur , Spread = 0 px    =>> default value
+                                =>> color: black            =>> default value.
+                                =>> outset                  =>> default value.
+
+
+    horizontal          =>> required
+    vertical            =>> required
+
+    Blur                =>> optional
+    Spread              =>> optional
+    Color               =>> optional
+    Inset, Outset       =>> optional
+
+    [ spread ]  =>> rarely used =>> better to be less than [ Blur ].
+*/

@@ -1,0 +1,52 @@
+/*
+    * transform-style:  flat            3d مش بيحافظ علي حاله 
+                        preserve-3d     3d بيحافظ علي حاله
+*/
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    perspective: 500px;
+}
+
+.father{
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    background-color: #080;
+    position: relative;             /* cauz inner divs will be absolute*/
+    transition: all 1s ease-in-out;
+    transform: rotateY(20deg);
+
+    transform-style: preserve-3d;
+}
+
+.child1{
+    width: 300px;
+    height: 300px;
+    background-color: #F00;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    transform: translatez(50px) rotateY(45deg);
+}
+
+.child2{
+    width: 300px;
+    height: 300px;
+    background-color: #00F;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    transform: translatez(150px) rotatex(45deg);
+}
+
+/*
+    * transform-style: flat;      =>> default value
+*/

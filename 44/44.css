@@ -1,0 +1,112 @@
+/*
+    [1] define [animation function]
+        @keyframes animationName {
+            from{
+                CSS attibute
+            }to{
+                CSS attibute
+            }
+
+            0%{
+                CSS attibute
+            }100%{
+                CSS attibute
+            }
+        }
+
+    
+    [2] call [animation function]
+        [1] animation-name: none                    =>> default
+        [2] animation-duration:                     =>> for one round
+
+        [3] animation-iteration-count:
+                                    1               =>> default
+                                    2, 3
+                                    infinite
+
+        [4] animation-direction:
+                                normal              =>> from [0%] to [100%]     =>> default
+                                reverse             =>> from [100%] to [0%]
+                                alternate           =>> normal  =>> reverse
+                                alternate-reverse   =>> revere  =>> normal
+
+        [5] animation-delay:
+                            0s                      =>> default
+                            1s, 2s
+
+        [6] animation-fill-mode:
+                                none                =>> default
+                                forwards            =>> stop at last keyframe
+                                backwards           =>> execute first keyframe  while delay
+                                both                =>> [forwards] [backwards]
+
+        [7] animation-play-state:
+                                running             =>> default
+                                paused              =>> stop animation
+        [8] animation-timing-function:
+                                    ease            =>> default
+                                    ease-in
+                                    ease-out
+                                    ease-in-out
+                                    linear
+
+    * [from = 0%] [to = 100%]   =>> selectors
+
+
+    * animation shorthand code:
+        =>> animation: none 0s ease 0s 1 normal none running;
+
+    [1] animation-name
+    [2] animation-duration
+    [3] animation-timing-function
+    [4] animation-delay
+    [5] animation-iteration-count
+    [6] animation-fill-mode
+    [7] animation-direction
+    [8] animation-play-state
+*/
+
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    font-size: 24px;
+}
+
+/* ============================== */
+div.first{
+    background: #f00;
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    animation-name: moving;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+    animation-play-state: running;
+    animation-timing-function: ease;
+
+    animation: none 0s ease 0 1 normal none running;
+}
+
+
+@keyframes moving{
+
+    0%{
+        top: 10px;                              /* [px] is a must */
+    }100%{
+        top: 400px;
+    }
+}
+
+

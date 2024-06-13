@@ -1,0 +1,81 @@
+challenges
+	=>> ladies and gentlemen =>> the solution with a brief description(explanation) as a programing comment
+
+1- 
+2- vendor prefixes
+3- border radius
+4- box-shadow
+5- box-sizing  =>> difference between [float] & [display:inline-block]
+6- box-shadow and border-radius [challenge or practice]
+
+7- text-shadow
+8- text-overflow
+9- word-wrap & white-space
+
+
+10- 2D transform: rotate
+11- 2D transform scale
+12- 2D transform: translate
+13- 2D transform: skew
+14- trnasform: matrix
+
+
+15- 3D transform: rotate
+16- 3D transform: translate
+17- 3D transform: scale
+18- 3D transform matrix				must watch and study it again
+19- transform: perspective perspective-origin 	must watch and study it again
+20- transform-origin & transform-style
+21- 
+22- 
+
+23- 
+24- 
+25- 
+26- 
+
+
+27- flex box: parent [flex-direction] [flex-wrap]
+28- flex box: parent [flex-flow: flex-direction, flex-wrap] [justify-content]
+29- flex box: parent [align-items] [align-content]
+
+30- flex box: child  [flex-grow] [flex-shrink]
+31- flex box: child  [flex-basis] [flex: flex-grow | flex-shrink | flex-basis]  =>> short hand code
+
+
+32- trnasition: 
+33- transition: 
+34- trnasition: 
+35- trnasition: 
+
+36- multi columns: 
+37- multi columns: 
+38- multi columns: 
+
+39- animation: animation intro & [keyframes]
+40- animation: [animation-name | animation-duration]
+41- animation: [animation-iteration-count | animation-direction]
+42- animation: [animation-delay | animation-fill-mode]
+43- animation: [animation-play-state | animation-timing-function]
+44- animation: animation shorthand code
+
+45- animation: animation exercise [create swing dropdown]
+46- animation: animation exercise [create wave audio loading]
+47- animation: animation exercise [create snake loading]
+48- animation: animation exercsie [animation outro]
+
+49- selectors: 
+50- selectors: 
+51- selectors: 
+52- selectors: 
+53- selectors: 
+54- selectors: 
+
+55- font-face
+56- media queries
+
+
+
+
+
+

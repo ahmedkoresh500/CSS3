@@ -1,0 +1,54 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    direction: ltr;
+}
+
+
+div.container{
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    background: #d0d0d0;
+
+    display: flex;
+}
+
+div.container div{
+    width: 150px;
+    max-height: 100px;                  /* [max-height] or [height] */
+    padding: 10px;
+    color: #fff;
+}
+
+/* ============================== */
+div.container .one{
+    background: #080;                 /* [500/4 = 125] */
+}
+
+div.container .two{
+    background: #f00;
+    flex-basis: 100px;                  /* [flex-basis]  =>> less than [100px] */
+}
+
+div.container .three{
+    background: #f0f;
+    flex-basis: 200px;                  /* [flex-basis]  =>> between [150px] [200px] */
+}
+
+div.container .four{
+    background: #00f;
+    flex-basis: auto;                   /* [flex-basis] [500/4 = 125]*/
+}
+
+
+/*
+    * flex-basis:       =>> for child
+                auto    =>> default
+*/
+
+

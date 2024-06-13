@@ -1,0 +1,29 @@
+div{
+    width: 250px;
+    margin: 50px auto;
+    padding: 10px;
+    background-color: #EEE;
+    border: 1px solid #CCC;
+    font-family: tahoma;
+}
+
+.div1{
+    word-wrap: normal;
+}
+
+.div2{
+    white-space: normal;
+}
+
+/*
+    * word-wrap:
+                normal      =>> default value   =>> text never go out div   =>> except [ word > width of div ].
+                break-word                      =>> text never go out div   =>> even if [ word > width of div ].
+
+    * white-space:
+                normal      =>> default value   =>> text never go out div   =>> except [ word > width of div ].
+                nowrap                          =>> text go out div.
+
+
+    * comparison between [ word-wrap: break-word; ] & [ white-space: normal; ].
+*/

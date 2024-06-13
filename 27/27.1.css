@@ -1,0 +1,72 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* try unhashing */
+/*
+body{
+    direction: rtl;             
+}
+*/
+
+div.container{
+    width: 800px;
+    margin: 50px auto;
+    padding: 10px;
+    background-color: #eee;
+
+    display: flex;
+    flex-direction: row;                /* parent  =>> default */
+    flex-wrap: nowrap;                  /* parent  =>> default */
+}
+
+
+
+div.container div{
+    width: 200px;
+    height: 60px;
+    margin: 5px;
+    padding: 10px;
+    color: #fff;
+    background: #080;
+    /* line-height: 35px; */    /* in child  =>> to center vertically =>> half [height + padding]   */
+    /* text-align: center; */   /* in child  =>> to center horizontally */
+}
+
+div.test{
+    display: inline-block;
+}
+
+
+/*
+    * direction:
+                ltr;                =>> default         =>> [flex boxes] [text]
+                rtl;                                    =>> [flex boxes] [text]
+
+    * display:
+            flex                    =>> no other elements  =>> in the line
+            inline-flex             =>> other elements     =>> in the line
+
+    * flex-direction:
+                    row             =>> default
+                    row-reverse     =>> [1] flex boxes  =>> reverse direction
+                                    =>> [2] text        =>> same like direction
+
+                    column          =>> arranged vertically as inserted
+                    column-reverse  =>> arranged vertically reverse inserted
+
+
+    * flex-wrap:
+                nowrap          =>> all elements in one line
+                wrap            =>> more than one line   =>> depending on width
+                wrap-reverse    =>> = wrap   =>> except  =>> first line = last div
+
+
+    * word-wrap:
+                normal      =>> default     =>> never go out element
+                no-wrap                     =>> go out element
+*/
+
+

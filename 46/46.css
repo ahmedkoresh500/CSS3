@@ -1,0 +1,64 @@
+/*
+    * lesson [46]: animation exercise [create wave audio loading]
+*/
+
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div.loading{
+    width: 200px;
+    height: 50px;
+    margin: 20px auto;
+    position: relative;
+}
+
+div.loading span{
+    width: 30px;
+    height: 5px;
+    background-color: #9b59b6;
+    display: block;
+
+    position: absolute;
+    bottom: 0px;                        /* all spans over each others */
+
+    animation: waving 2s infinite ease;
+}
+
+div.loading span:nth-of-type(2){
+    left: 40px;
+    animation-delay: .2s;
+}
+
+div.loading span:nth-of-type(3){
+    left: 80px;
+    animation-delay: .4s;
+}
+
+div.loading span:nth-of-type(4){
+    left: 120px;
+    animation-delay: .6s;
+}
+
+div.loading span:nth-of-type(5){
+    left: 160px;
+    animation-delay: .8s;
+}
+
+
+@keyframes waving{
+    0%, 50%, 100%{
+        height: 5px;
+        transform: translateY(0px);
+        background: #9b59b6;
+    }25%{
+        height: 30px;
+        transform: translateY(15px);
+        background: #3948d6;
+    }
+}
+
+

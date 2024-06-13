@@ -1,0 +1,68 @@
+/*
+    [1] define [animation function]
+        @keyframes animationName {
+            from{
+                CSS attibute
+            }to{
+                CSS attibute
+            }
+
+            0%{
+                CSS attibute
+            }100%{
+                CSS attibute
+            }
+        }
+
+    [2] call [animation function]
+        [1] animation-name: none      =>> default
+        [2] animation-duration:     =>> for one round
+
+    * [from = 0%] [to = 100%]   =>> selectors
+*/
+
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div.first{
+    width: 150px;
+    height: 150px;
+    background: #f00;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    animation-name: moving;                     /* [2] call [animation function] */
+    animation-duration: 4s;
+}
+
+@keyframes moving{                              /* [1] define [animation function] */
+
+    0%{
+        top: 10px;                              /* [px] is a must */
+    }20%{
+        top: 90px;
+    }30%{
+        top: 60px;
+    }40%{
+        top: 110px;
+    }50%{
+        top: 80px;
+    }60%{
+        top: 150px;
+    }70%{
+        top: 120px;
+    }80%{
+        top: 190px;
+    }90%{
+        top: 160px;
+    }100%{
+        top: 220px;
+    }
+}
+
+

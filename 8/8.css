@@ -1,0 +1,37 @@
+div{
+    width: 200px;
+    /* height: 100px; */
+    margin: 100px auto;
+    padding: 10px;
+    background: #EEE;
+    border: 1px solid #CCC;
+    font-family: tahoma;
+    
+    white-space: nowrap;
+    overflow: hidden;   /* auto; */
+    text-overflow: clip;
+}
+
+div:hover{
+    overflow: auto;
+    text-overflow: clip;            /*ellipsis =>>  not reveal the hidden part of the text */
+}
+
+/*
+    * white-space:
+                normal          =>> default value   =>> text never go out div   =>> except [word > width of div]
+                nowrap                              =>> text go out div
+
+    * overflow:
+                visible     =>> default value.
+                hidden
+                auto        =>> better than scroll.
+                scroll
+
+    * text-overflow:
+                clip        =>> default value   =>> to reset text-overflow.
+                                                =>> to cancel text-overflow.
+                ellipsis    = علامات الحذف
+
+    * any css attribute can take inherit value  =>> the value of parent.
+*/

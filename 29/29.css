@@ -1,0 +1,78 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div.container{
+    width: 800px;   /* [width= 200px] =>> [align-content]  =>> must use [flex-wrap: wrap;] */
+    height: 400px;
+    margin: 50px auto;
+    padding: 10px;
+    background-color: #d0d0d0;
+    display: flex;
+
+    /* justify-content: center; */   /* deal with divs as divs      =>> try hashing each of them */
+    align-items: baseline;           /* deal with divs as one line  =>> try hashing each of them*/
+
+    /*
+    align-content: stretch;
+    flex-wrap: wrap;
+    */
+}
+
+
+
+div.container div{
+    width: 200px;
+    max-height: 200px;              /* [max-height] not [height]  =>> to watch results */
+    margin: 5px;
+    padding: 10px;
+    color: #fff;
+    background: #080;
+}
+
+div.container div:first-of-type{
+    background: #080;
+}
+
+div.container div:nth-of-type(2){
+    background: #f00;
+}
+
+div.container div:nth-of-type(3){
+    background: #00f;
+}
+
+
+div.test{
+    display: inline-block;
+}
+
+
+/*
+    * justify-content                                            =>> horizontally
+    * align-items           =>> the same like [justify-content]  =>> but vertically
+    * align-content         =>> the same like [justify-content]  =>> but vertically
+
+
+    * [align-content]  =>> must use [flex-wrap: wrap]
+
+
+    [1] align-items:
+                stretch         =>> default     =>> [max-height] never changed
+                flex-start                      =>> [max-height] changed        =>> two are the same
+                flex-end                        =>> [max-height] changed
+                center                          =>> [max-height] changed
+                baseline                        =>> [max-height] changed        =>> two are the same
+
+    [2] align-content:
+                stretch         =>> default     =>> [max-height] never changed
+                flex-start                      =>> [max-height] changed
+                flex-end                        =>> [max-height] changed
+                center                          =>> [max-height] changed
+                space-between                   =>> [max-height] changed    =>> space between and around [double]
+                space-around                    =>> [max-height] changed    =>> equal spaces between and around
+*/
+
+

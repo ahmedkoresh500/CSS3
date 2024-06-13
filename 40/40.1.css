@@ -1,0 +1,101 @@
+/*
+    [1] define [animation function]
+        @keyframes animationName {
+            from{
+                CSS attibute
+            }to{
+                CSS attibute
+            }
+
+            0%{
+                CSS attibute
+            }100%{
+                CSS attibute
+            }
+        }
+
+    [2] call [animation function]
+        [1] animation-name: none    =>> default
+        [2] animation-duration:     =>> for one round
+
+    * [from = 0%] [to = 100%]   =>> selectors
+*/
+
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div.first{
+    width: 150px;
+    height: 150px;
+    background: #f00;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    animation-name: moving;                     /* [2] call [animation function] */
+    animation-duration: 3s;
+}
+
+
+@-webkit-keyframes moving{                      /* [1] define [animation function] */
+
+    0%, 100%{
+        top: 10px;                              /* [px] is a must */
+        left: 10px;
+    }25%{
+        top: 10px;
+        left: 500px;
+        background-color: #080;
+        border-radius: 50%;
+    }50%{
+        top: 300px;
+        left: 500px;
+    }75%{
+        top: 300px;
+        left: 10px;
+    }
+}
+
+@-moz-keyframes moving{                         /* [1] define [animation function] */
+
+    0%, 100%{                                   /* same attributes */
+        top: 10px;                              /* [px] is a must */
+        left: 10px;
+    }25%{
+        top: 10px;
+        left: 500px;
+        background-color: #080;
+        border-radius: 50%;
+    }50%{
+        top: 300px;
+        left: 500px;
+    }75%{
+        top: 300px;
+        left: 10px;
+    }
+}
+
+@keyframes moving{                              /* [1] define [animation function] */
+
+    0%, 100%{                                   /* same attributes */
+        top: 10px;                              /* [px] is a must */
+        left: 10px;
+    }25%{
+        top: 10px;
+        left: 500px;
+        background-color: #080;
+        border-radius: 50%;
+    }50%{
+        top: 300px;
+        left: 500px;
+    }75%{
+        top: 300px;
+        left: 10px;
+    }
+}
+
+

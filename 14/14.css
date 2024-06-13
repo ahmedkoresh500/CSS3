@@ -1,0 +1,55 @@
+*{
+    /* -webkit-box-sizing: content-box; */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img{
+    transition: all 0.5s ease-in-out; /* in element  =>> Not in hover  =>> transition when hover */
+}
+
+img:hover{
+    transform: matrix(-1 , 0 , 0 , 1 , 500 , 30);    /* if i wrote [px] [deg]  =>> code not work */
+    /* transform: translate(500px , 30px); */
+
+    transform: matrix( .1 , -.5 , .5 , .1 , 0 , 0 );
+}
+
+
+/* 
+    * transform: none;      =>> default value       =>> to reset transform
+
+    1- transform: rotate
+    2- transform: scale         [1]
+    3- transform: translate     [3]
+    4- transform: skew          [2]
+
+    5- syntax of transform Matrix:
+        =>> transform: matrix( a , b , c , d , x , y )
+        =>> transform: matrix( 1 , 0 , 0 , 1 , 300 , 30 )
+
+    * a =>> scaleX
+
+    * b =>> skewY
+    * c =>> skewX
+
+    * d =>> scaleY
+
+    * x =>> translateX
+    * y =>> trnaslateY
+
+    * transform: scale(-1 , 1)    =>> flip    مرايه للصوره  يواجه     =  transform scale 3D
+    * 
+
+    * two values of skew:
+        * same sign         [+] or [-]          =>> skew
+        * different sign                        =>> rotate
+
+    * in case of different sign [skew]:
+        =>> second value [x] = [-]  =>> clockwise direction         نفس اتجاه عقارب الساعه
+        =>> first value  [y] = [-]  =>> counter clockwise direction عكس اتجاه عقارب الساعه
+        
+
+
+*/

@@ -1,0 +1,34 @@
+/*  text-shadow: Horizontal(+ -) | Vertical(+ -) | Blur-Radius(+) | Color  */
+
+h1{
+    margin: 20px;
+    font-family: arial , tahoma;
+    text-align: center;                     /* to center text */
+    text-shadow:1px 2px 3px #d338acfa,
+                2px 3px 3px #c33ea1fa,
+                3px 4px 3px #b54297fa;
+    transition: all 0.5s ease-in-out;       /* in element =>> not in hover =>> transition when hover */
+}
+
+h1{
+    text-shadow: none;
+}
+
+h1:hover{
+    text-shadow:1px 2px 3px #d338acfa,
+                2px 3px 3px #c33ea1fa,
+                3px 4px 3px #b54297fa;
+}
+
+/*
+    * text-shadow: none;       =>> default value    =>> to reset shadow.
+                                                    =>> to cancel shadow.
+
+    * last element written in css =>> execution.    =>> [text-shadow: none;]
+
+    * two ways to center an element:
+        1- mragin: auto;            =>> [ div ] [ section ] [ aside ] and so on.
+        2- text-align: center;      =>> [ h1 ] [ p ] [ span ] and so on.
+
+        3- [img] in [div] and center div by using =>> [margin: auto;]
+*/

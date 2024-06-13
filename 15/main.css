@@ -1,0 +1,49 @@
+/*
+    * 3d transform rotate:
+        transform: rotatex()
+        transform: rotatey()
+*/
+
+div{
+    width: 100%;
+    background-color: #EEE;
+    border: 1px solid #CCC;
+    margin: 100px auto;
+
+}
+
+img{
+    margin-left: 35%;
+    transition: all 3s ease-in-out;
+}
+
+img:hover{
+    Transform: rotatex(-180deg);        /* flip:  مرايه للصوره  يواجه  */
+    Transform: rotatey(-90deg);        /* = transform: scale(-1 , 1) */
+    /* transform: rotatez(-180deg); */
+}
+
+/*
+    * trnasform: none;              =>> default value       =>> to reset transform
+
+    
+    * transform: rotatex(+ - deg)           =>> 3D transform
+            transform: rotatex(+deg)    =   transform:rotatex(-deg)
+
+            
+    * transform: rotatey(+ - deg)           =>> 3D transform
+            transform: rotatey(+deg)    =   transform:rotaty(-deg)
+    =
+    * transform: scale(-1 , 1)              =>> 3D transform
+
+
+
+    * transform: rotate( + - deg )          =>> 2D transform
+    =
+    * transform: rotatez( + - deg )         =>> short hand for rotate 3D    =>> will be used in animation
+    
+    [+] =>> clockwise direction             نفس اتجاه عقارب الساعه
+    [-] =>> counter clockwise direction     عكس اتجاه عقارب الساعه
+
+
+*/

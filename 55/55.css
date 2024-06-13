@@ -1,0 +1,41 @@
+/*
+    * web safe fonts: [Arial, tahoma, "times new roman", ...]     =>> in all operating systems
+*/
+
+
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div{
+    width: 300px;
+    margin: 50px auto;
+    padding: 15px;
+    background: #eee;
+    text-align: center;
+    font-family: Arial;
+    font-family: ahmed-koresh;  /* 'Delicious Handrawn', cursive; */
+    font-size: 40px;
+}
+
+@font-face{
+    font-family: ahmed-koresh;
+    src: url("fonts/osamaElezero.ttf");
+    src: url("fonts/osamaElezero.woff");
+}
+
+
+/*
+    * types of fonts:
+        [1] TTF:        =>> true type font
+        [2] OTF:        =>> open type font
+        [3] EOT:        =>> embedded type font
+        [3] WOFF:       =>> web open font
+        [4] WOFF2:      =>> web open font 2
+        [5] SVG:        =>> scalable vector graphic
+*/
+
+
