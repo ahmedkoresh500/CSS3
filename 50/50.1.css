@@ -1,0 +1,22 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* [1] anything checked  =>> in general */
+:checked{
+    width: 50px;
+}
+
+/* [1] anything checked  =>> inside form [class="osama"] */
+/* distance is a must [.osama] [:checked] */
+.osama :checked{
+    width: 50px;
+}
+
+/* no distance [input] [[]] */
+/* no distance [[]] [:checked] */
+input[type=radio]:checked{
+    width: 50px;
+}

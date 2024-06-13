@@ -1,0 +1,15 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    border: 0px;
+}
+
+:disabled{
+    background-color:#ccc;
+}
+
+:enabled{
+    background-color: greenyellow;
+}

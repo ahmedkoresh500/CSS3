@@ -1,0 +1,21 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div{
+    border: 1px solid #ccc;
+}
+
+/*
+    * selectors:
+        [2][^] => attribute selector
+        =>> has complete value
+        =>> start letters of the value
+*/
+
+/* [class^="osama"] {          two are the same */
+[class^="os"] {             /* two are the same */
+    color: #f00;
+}

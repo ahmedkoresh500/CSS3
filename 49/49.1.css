@@ -1,0 +1,21 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div{
+    border: 1px solid #ccc;
+}
+span{
+    color: #f00;
+}
+
+/*
+    * selectors: 
+        [1][~] => next selector
+*/
+
+p ~ span{               /* [span] after [p] =>> separator or not  =>> the same parent */
+    color: #0f0;
+}

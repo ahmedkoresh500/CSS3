@@ -1,0 +1,22 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div{
+    border: 1px solid #ccc;
+}
+
+/*
+    * selectors:
+        [3][$] => attribute selector
+        =>> has complete value
+        =>> end letters of the value
+*/
+
+/* [class$="osama"] {   =>> 3 are the same */
+/* [class$="a"] {       =>> 3 are the same */
+[class$="a"] {       /* =>> 3 are the same */
+    color: #f00;
+}
