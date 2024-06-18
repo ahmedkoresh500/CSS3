@@ -1,0 +1,24 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 24px;
+}
+
+p:only-of-type{                     /* third best selector way */
+    color: #ddd;                  /* [specified selector] more powerful than [not specified selector] */
+}
+
+section p:only-of-type{             /* best selector way */
+    color: rgb(14, 197, 14);      /* [specified selector] more powerful than [not specified selector] */
+}
+
+section :only-of-type{              /* second best selector way */
+    color: chocolate;             /* [specified selector] more powerful than [not specified selector] */
+}
+
+
+::selection{
+    color: yellow;
+    background-color: #000;
+}

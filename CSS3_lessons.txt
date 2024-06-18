@@ -66,10 +66,10 @@ challenges
 
 49- selectors: [~][^][$][*]
 50- selectors: [checked][enabled][disabled][empty]
-51- selectors: []
-52- selectors: 
-53- selectors: 
-54- selectors: 
+51- selectors: [not] [first-child] [last-child] [first-of-type]
+52- selectors: [only-child] [only-of-type] [selection]
+53- selectors: [nth-child] [nth-of-type] [part 1]
+54- selectors: [nth-child] [nth-of-type] [part 2]
 
 55- font-face
 56- media queries

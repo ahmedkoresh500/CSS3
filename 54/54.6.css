@@ -1,0 +1,31 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 24px;
+}
+
+/*
+    * [nth]:
+        [n]  -> number
+        [th] -> ordering number [1st] [2nd] [3rd] [4th] [5th]
+
+    * nth(number, formula, keyword)
+    * keyword: [even] or [odd]
+*/
+
+div, p{
+    width: 400px;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+/* range */
+div:nth-child(n+4):nth-child(-n+8){
+    background-color: #ccc;
+}
+
+/*
+    * [MDN], [W3School]  =>> good reference for [selectors]
+*/

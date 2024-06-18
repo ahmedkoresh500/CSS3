@@ -1,0 +1,25 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 24px;
+}
+
+section{
+    border: 1px solid #ccc;
+    margin: 5px;
+}
+/* ============================================================= */
+                                      /* third best selector way */
+p:only-child{                         /* only child =>> for any element [including body] */
+    color: #ddd;                    /* applied */
+    background-color: blue;         /* not applied */
+}
+
+section p:only-child{                 /* best selector way */
+    background-color: green;        /* [specified selector] more powerful than [not specified selector] */
+}
+
+section :only-child{                  /* second best selector way */
+    background-color: chocolate;    /* [specified selector] more powerful than [not specified selector] */
+}

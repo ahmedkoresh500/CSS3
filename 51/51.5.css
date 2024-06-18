@@ -1,0 +1,20 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* space between [section] [:first-of-type]     =>> deals with [childs] */
+/* no space between [section] [:first-of-type]  =>> deals with [section] itself */
+
+section div:first-child{
+    color: red;
+}
+
+section div:last-of-type{
+    color: brown;
+    background-color: aqua;
+    margin: 5px 0px;
+    padding: 10px;
+    border-radius: 5px;
+}

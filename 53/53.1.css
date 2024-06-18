@@ -1,0 +1,34 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 24px;
+}
+
+/*
+    * [nth]:
+        [n]  -> number
+        [th] -> ordering number [1st] [2nd] [3rd] [4th] [5th]
+
+    * nth(number, formula, keyword)
+*/
+
+div:nth-child(2){               /* [first-child] better than [nth-child(1)] */
+    color: #00f;
+    font-weight: bold;
+}
+
+:nth-child(9){
+    color: blueviolet;
+    font-weight: bold;
+}
+
+aside:nth-of-type(3){
+    color: chocolate;
+    font-weight: bold;
+}
+
+:nth-of-type(7){
+    color: red;
+    font-weight: bold;
+}

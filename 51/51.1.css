@@ -1,0 +1,17 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* space between [section] [:not]       =>> deals with [childs] */
+/* no space between [section] [:not]    =>> deals with [section] itself */
+
+
+section :not(p){        /* all elements inside =>> except (selector)or(attribute) */
+    color: #f00;
+}
+
+section :not(.div1){            
+    background-color:aquamarine;
+}

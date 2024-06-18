@@ -1,0 +1,22 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* space between [section][:first-of-type]      =>> deals with [childs] */
+/* no space between [section][:first-of-type]   =>> deals with [section] itself */
+section :first-of-type{
+    color: red;
+}
+
+section div:first-of-type{            /* [div] inside [section] */
+    background-color: aqua;
+}
+
+section div:not(:first-of-type){
+    background-color: brown;
+    margin: 5px 0px;
+    padding: 10px;
+    border-radius: 5px;
+}

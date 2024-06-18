@@ -1,0 +1,16 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* space between [section] [:first-child]       =>> deals with [childs] */
+/* no space between [section] [:first-child]    =>> deals with [section] itself */
+
+section :first-child{
+    background-color: cadetblue;
+}
+
+section :not(:first-child){
+    color: red;
+}
