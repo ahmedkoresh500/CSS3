@@ -11,10 +11,11 @@ div{
 /*
     * selectors:
         [4][*] => attribute selector
-        =>> has complete value
+        =>> complete value
         =>> include letters of the value
 */
 
-[class*="xm"]{
+/* [class="foxmen"] = [class*="foxmen"] = [class*="xm"] = [class*="fox"] = [class*="men"] */
+[class*="fox"]{
     color: red;
 }

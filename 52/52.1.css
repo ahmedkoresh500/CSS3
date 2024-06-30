@@ -7,19 +7,21 @@
 
 section{
     border: 1px solid #ccc;
-    margin: 5px;
+    margin: 10px;
+    padding: 10px;
 }
 /* ============================================================= */
-                                      /* third best selector way */
-p:only-child{                         /* only child =>> for any element [including body] */
+                                      /* [3] third best selector way */
+p:only-child{                         /* only child =>> inside any element [including body] */
     color: #ddd;                    /* applied */
     background-color: blue;         /* not applied */
 }
 
-section p:only-child{                 /* best selector way */
+section p:only-child{                 /* [1] best selector way */
     background-color: green;        /* [specified selector] more powerful than [not specified selector] */
 }
 
-section :only-child{                  /* second best selector way */
+section :only-child{                  /* [2] second best selector way */
     background-color: chocolate;    /* [specified selector] more powerful than [not specified selector] */
+    padding: 10px;
 }

@@ -4,13 +4,14 @@
     box-sizing: border-box;
 }
 
-/* space between [section][:last-child]      =>> deals with [childs] */
-/* no space between [section][:last-child]   =>> deals with [section] itself */
+/* space between [section] [:last-child]      =>> deals with [childs] */
+/* no space between [section] [:last-child]   =>> deals with [section] itself */
 
 section :last-child{
-    font-size: 24px;
-    padding: 10px;
     background-color: aqua;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 10px;
 }
 
 section :not(:last-child){

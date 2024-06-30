@@ -7,12 +7,16 @@
 /* space between [section] [:first-of-type]     =>> deals with [childs] */
 /* no space between [section] [:first-of-type]  =>> deals with [section] itself */
 
+section{
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
 section div:first-child{
     color: red;
 }
 
 section div:last-of-type{
-    color: brown;
     background-color: aqua;
     margin: 5px 0px;
     padding: 10px;

@@ -5,15 +5,15 @@
     font-size: 24px;
 }
 
-p:only-of-type{                     /* third best selector way */
+p:only-of-type{                     /* [3] third best selector way */
     color: #ddd;                  /* [specified selector] more powerful than [not specified selector] */
 }
 
-section p:only-of-type{             /* best selector way */
+section p:only-of-type{             /* [1] best selector way */
     color: rgb(14, 197, 14);      /* [specified selector] more powerful than [not specified selector] */
 }
 
-section :only-of-type{              /* second best selector way */
+section :only-of-type{              /* [2] second best selector way */
     color: chocolate;             /* [specified selector] more powerful than [not specified selector] */
 }
 

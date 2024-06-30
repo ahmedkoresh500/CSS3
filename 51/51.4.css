@@ -12,11 +12,14 @@ section :first-of-type{
 
 section div:first-of-type{            /* [div] inside [section] */
     background-color: aqua;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 section div:not(:first-of-type){
+    color: azure;
     background-color: brown;
     margin: 5px 0px;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
 }

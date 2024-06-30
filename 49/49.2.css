@@ -10,12 +10,12 @@ div{
 
 /*
     * selectors:
-        [2][^] => attribute selector
-        =>> has complete value
+        [2][^] =>> attribute selector
+        =>> complete value
         =>> start letters of the value
 */
 
-/* [class^="osama"] {          two are the same */
-[class^="os"] {             /* two are the same */
+/* [class="osama"] = [class^="osama"] = [class^="os"] */
+[class^="os"] {
     color: #f00;
 }
