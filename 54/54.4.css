@@ -20,6 +20,7 @@ div, p{
     padding: 5px;
     border: 1px solid #ccc;
 }
+
 /*
     * (2n+1) = (odd):
         =>> 2*0 = 0 + 1 = 1
@@ -33,4 +34,3 @@ div, p{
 div:nth-child(2n+1){                    /* from start */
     background-color: #ccc;
 }
-

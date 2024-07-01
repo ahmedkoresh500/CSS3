@@ -25,6 +25,6 @@ div:nth-last-child(n+3){                 /* third child [if div]  =>> and all pr
     background-color: #ccc;            /* from end  =>> to start */
 }
 
-div:nth-last-of-type(n+7){               /* seventh child [if div] =>> and all previous divs */
+div:nth-last-of-type(n+7){               /* seventh child [of type] =>> and all previous divs */
     background-color: chocolate;       /* from end  =>> to start */
 }

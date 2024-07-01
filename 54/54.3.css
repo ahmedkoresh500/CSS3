@@ -21,11 +21,10 @@ div, p{
     border: 1px solid #ccc;
 }
 
-div:nth-child(-n+8){                 /* first child [if div]  =>> until eigth */
+div:nth-child(-n+8){                 /* first child [if div]  =>> till eigth child */
     background-color: #ccc;
 }
 
-
-div:nth-of-type(-n+4){
+div:nth-of-type(-n+4){              /* first child [of-type]  =>> till fourth of-type */
     background-color: chocolate;
 }

@@ -25,6 +25,6 @@ div:nth-child(n+4){                 /* fourth child [if div]  =>> and all next d
     background-color: #ccc;
 }
 
-div:nth-of-type(n+8){               /* eighth child [if div]  =>> and all next divs */
+div:nth-of-type(n+8){               /* eighth child [of type] =>> and all next divs */
     background-color: chocolate;
 }
