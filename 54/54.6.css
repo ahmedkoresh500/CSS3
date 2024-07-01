@@ -21,11 +21,17 @@ div, p{
     border: 1px solid #ccc;
 }
 
-/* range */
-div:nth-child(n+4):nth-child(-n+8){
-    background-color: #ccc;
+/* 
+    * [range] 
+    * [MDN], [W3School]  =>> references for [selectors]
+*/
+div:nth-child(-n+8):nth-child(n+4){     /* (-n+8) =>> first child [if div]   =>> till eigth child */
+    background-color: #ccc;           /* (n+4)  =>> fourth child [if div]  =>> and all next divs */
 }
 
 /*
-    * [MDN], [W3School]  =>> good reference for [selectors]
+div:nth-of-type(-n+8):nth-of-type(n+4){
+    background-color: #ccc;
+}
 */
+
