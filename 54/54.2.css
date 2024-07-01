@@ -21,11 +21,10 @@ div, p{
     border: 1px solid #ccc;
 }
 
-div:nth-last-child(n+4){                 /* fourth child [if div]  =>> and all next divs */
-    background-color: #ccc;
+div:nth-last-child(n+3){                 /* third child [if div]  =>> and all previous divs */
+    background-color: #ccc;            /* from end  =>> to start */
 }
 
-
-div:nth-last-of-type(n+8){
-    background-color: chocolate;
+div:nth-last-of-type(n+7){               /* seventh child [if div] =>> and all previous divs */
+    background-color: chocolate;       /* from end  =>> to start */
 }

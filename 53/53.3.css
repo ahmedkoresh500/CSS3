@@ -22,18 +22,25 @@ div, p{
 }
 
 div:nth-child(2){                   /* count from first child */
-    background-color: #eee;
+    background-color: #eee;       /* last CSS code here  =>> override this code */
 }
 
+/*
+    [1] [first-child] better than [nth-child(1)]        =>> two are the same
+    [2] [last-child] better than [nth-last-child(1)]    =>> two are the same
+*/
 div:nth-last-child(1){              /* count from last child */
     background-color: #ccc;
 }
 
+/*
+    [1] [first-of-type] better than [nth-of-type(1)]
+    [2] [last-of-type] better than [nth-last-of-type(1)]
+*/
 div:nth-last-of-type(2){              /* count from last child */
-    background-color: #ccc;
+    background-color: blueviolet;
 }
 
 div:nth-last-child(even){
     background-color: chocolate;
-
 }

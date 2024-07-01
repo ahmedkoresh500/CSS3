@@ -68,8 +68,8 @@ challenges
 50- selectors: [checked][enabled][disabled][empty]
 51- selectors: [not] [first-child] [last-child] [first-of-type]
 52- selectors: [only-child] [only-of-type] [selection]
-53- selectors: [nth-child] [nth-of-type] [part 1]
-54- selectors: [nth-child] [nth-of-type] [part 2]
+53- selectors: [nth-child()] [nth-last-child()] [nth-of-type()] [nth-last-of-type] [part 1] -> [number], [keyword]
+54- selectors: [nth-child()] [nth-last-child()] [nth-of-type()] [nth-last-of-type] [part 1] -> [number], [keyword]
 
 55- font-face
 56- media queries
