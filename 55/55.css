@@ -1,8 +1,18 @@
 /*
-    * web safe fonts: [Arial, tahoma, "times new roman", ...]     =>> in all operating systems
+    * web safe fonts: 
+        =>> [font-family: Arial, tahoma, "times new roman", ...;]     =>> in all operating systems
+
+    * [www.cssfontstack.com] website
+    * [fonts.google.com] website
+
+    * types of fonts  =>> for different browsers:
+        [1] TTF:        =>> true type font
+        [2] OTF:        =>> open type font
+        [3] EOT:        =>> embedded type font
+        [3] WOFF:       =>> web open font
+        [4] WOFF2:      =>> web open font 2
+        [5] SVG:        =>> scalable vector graphic
 */
-
-
 
 *{
     -webkit-box-sizing: border-box;
@@ -16,26 +26,14 @@ div{
     padding: 15px;
     background: #eee;
     text-align: center;
-    font-family: Arial;
-    font-family: ahmed-koresh;  /* 'Delicious Handrawn', cursive; */
+    font-family: ahmed-koresh;      /* link manually added down */
+    font-family: Pacifico;          /* link added in [head html] */
+    font-family: Margarine;         /* link added in [head html] */
     font-size: 40px;
 }
 
 @font-face{
-    font-family: ahmed-koresh;
-    src: url("fonts/osamaElezero.ttf");
-    src: url("fonts/osamaElezero.woff");
+    font-family: ahmed-koresh;          /* manually added [font-family] */
+    src: url("fonts/osamaElzero.ttf");  /* online link for  =>> manually added [font-family] */
+    src: url("fonts/osamaElzero.woff"); /* example  =>> not real */
 }
-
-
-/*
-    * types of fonts:
-        [1] TTF:        =>> true type font
-        [2] OTF:        =>> open type font
-        [3] EOT:        =>> embedded type font
-        [3] WOFF:       =>> web open font
-        [4] WOFF2:      =>> web open font 2
-        [5] SVG:        =>> scalable vector graphic
-*/
-
-
