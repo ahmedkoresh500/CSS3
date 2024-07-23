@@ -8,13 +8,14 @@
 
 /*
     * multi columns:
-        [1] column-span: 1;                     =>> default value
+        [1] column-span: 1;                     =>> [column 1]  =>> default value
         [2] column-fill:                        =>> supported in [firefox browser] only
         [3] columns: auto auto;                 =>> default value
 
-    * column-span:  1                   =>> column 1            =>> only 2 values
-                    all                 =>> not in columns      =>> only 2 values
+    * column-span:  1                   =>> [column 1]      =>> default value   =>> only 2 values
+                    all                 =>> not in columns                      =>> only 2 values
 
+    * columns: auto auto;               =>> default value
     * columns: width | count;
 */
 
@@ -25,7 +26,7 @@ div{
     column-rule: 7px solid #080;            /* short hand code */
 
     /* columns: auto auto; */                 /* default value */
-    columns: 400px 3;                         /* [400px]  =>> minimum width */
+    columns: 400px 3;                         /* [400px] minimum width */
 }
 
 div h1{

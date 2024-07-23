@@ -43,7 +43,7 @@ challenges
 31- flex box: child  [flex-basis] [flex: flex-grow | flex-shrink | flex-basis]  =>> short hand code
 
 
-32- trnasition: intro & [short hand] code
+32- trnasition: [Intro] [short hand code]
 33- transition: [property] [duration]
 34- trnasition: [timing function] [delay]
 35- trnasition: Examples
@@ -66,7 +66,7 @@ challenges
 
 49- selectors: [~][^][$][*]
 50- selectors: [checked][enabled][disabled][empty]
-51- selectors: [not] [first-child] [last-child] [first-of-type]
+51- selectors: [not] [first-child] [last-child] [first-of-type] [last-of-type]
 52- selectors: [only-child] [only-of-type] [selection]
 53- selectors: [nth-child()] [nth-last-child()] [nth-of-type()] [nth-last-of-type] [part 1] -> [number], [keyword]
 54- selectors: [nth-child()] [nth-last-child()] [nth-of-type()] [nth-last-of-type] [part 2] -> [formula]
