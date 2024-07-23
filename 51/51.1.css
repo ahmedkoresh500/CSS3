@@ -2,16 +2,24 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+
+    font-size: 20px;
+
+}
+
+section :nth-child(n+1){
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 /* space between [section] [:not]       =>> deals with [childs] */
 /* no space between [section] [:not]    =>> deals with [section] itself */
 
-
-section :not(p){        /* all elements inside =>> except (selector)or(attribute) */
+section :not(p){        /* all child elements  =>> except (selector)or(attribute) */
     color: #f00;
 }
 
-section :not(.div1){            
-    background-color:aquamarine;
+section :not(.div1){
+    color:aquamarine;
 }

@@ -22,9 +22,9 @@ div, p{
 }
 
 div:nth-last-child(n+3){                 /* third child [if div]  =>> and all previous divs */
-    background-color: #ccc;            /* from end  =>> to start */
-}
+    background-color: #ccc;            /* count from [last child] */
+}                                        /* count from [last of type] */
 
-div:nth-last-of-type(n+7){               /* seventh child [of type] =>> and all previous divs */
-    background-color: chocolate;       /* from end  =>> to start */
-}
+div:nth-last-of-type(n+7){               /* seventh of type [if div] =>> and all previous divs */
+    background-color: chocolate;       /* count from [last child] */
+}                                        /* count from [last of type] */

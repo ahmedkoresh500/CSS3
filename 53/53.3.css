@@ -11,7 +11,7 @@
         [th] -> ordering number [1st] [2nd] [3rd] [4th] [5th]
 
     * nth(number, formula, keyword)
-    * keyword: [even] or [odd]
+    * keyword: [odd] or [even]
 */
 
 div, p{
@@ -21,7 +21,7 @@ div, p{
     border: 1px solid #ccc;
 }
 
-div:nth-child(2){                   /* count from first child */
+div:nth-child(2){                   /* [1] count from first child */
     background-color: #eee;       /* last CSS code here  =>> override this code */
 }
 
@@ -29,7 +29,7 @@ div:nth-child(2){                   /* count from first child */
     [1] [first-child] better than [nth-child(1)]        =>> two are the same
     [2] [last-child] better than [nth-last-child(1)]    =>> two are the same
 */
-div:nth-last-child(1){              /* count from last child */
+div:nth-last-child(1){              /* [2] count from last child */
     background-color: #ccc;
 }
 
@@ -37,7 +37,7 @@ div:nth-last-child(1){              /* count from last child */
     [1] [first-of-type] better than [nth-of-type(1)]
     [2] [last-of-type] better than [nth-last-of-type(1)]
 */
-div:nth-last-of-type(2){              /* count from last child */
+div:nth-last-of-type(2){              /* [2] count from last child */
     background-color: blueviolet;
 }
 

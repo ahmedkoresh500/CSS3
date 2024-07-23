@@ -2,6 +2,8 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+
+    font-size: 18px;
 }
 
 /* space between [section][:first-of-type]      =>> deals with [childs] */
@@ -11,13 +13,13 @@ section :first-of-type{
 }
 
 section div:first-of-type{            /* [div] inside [section] */
-    background-color: aqua;
+    background-color:antiquewhite;
     padding: 10px;
     border-radius: 10px;
 }
 
 section div:not(:first-of-type){
-    color: azure;
+    color:rgb(247, 247, 240);
     background-color: brown;
     margin: 5px 0px;
     padding: 10px;

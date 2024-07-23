@@ -9,14 +9,14 @@
     width: 50px;
 }
 
-/* [1] anything checked  =>> inside form [class="osama"] */
-/* distance between [.osama] [:checked] is a must */
+/* [1] anything checked  =>> inside element with class ["osama"] */
+/* space between [.osama] [:checked] is a must */
 .osama :checked{
     width: 50px;
 }
 
-/* no distance between [input] [[type=radio]] */
-/* no distance between [[type=radio]] [:checked] */
+/* no space between [input] [type=radio] */
+/* no space between [type=radio] [:checked] */
 input[type=radio]:checked{
-    width: 50px;
+    width: 100px;
 }

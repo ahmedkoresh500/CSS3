@@ -1,0 +1,21 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    font-size: 20px;
+}
+
+/*
+    * multi columns:
+        [1] column-count: auto;                   =>> default value
+        [2] column-gap: normal;                   =>> default value
+*/
+
+div {
+    column-count: 3;
+    -webkit-column-count: 4;            /* last one written  =>> executed */
+
+    column-gap: 100px;
+    -webkit-column-gap: 100px;          /* last one written  =>> executed */
+}

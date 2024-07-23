@@ -5,6 +5,8 @@
 }
 
 div{
+    margin: 5px 0px;
+    padding: 5px;
     border: 1px solid #ccc;
 }
 span{
@@ -16,6 +18,6 @@ span{
         [1][~] => next selector
 */
 
-p ~ span{               /* [span] after [p] =>> separator or not  =>> the same parent */
+p ~ span{               /* next [span] after [p] =>> separator or not  =>> the same parent */
     color: #0f0;
 }

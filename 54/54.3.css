@@ -11,7 +11,7 @@
         [th] -> ordering number [1st] [2nd] [3rd] [4th] [5th]
 
     * nth(number, formula, keyword)
-    * keyword: [even] or [odd]
+    * keyword: [odd] or [even]
 */
 
 div, p{
@@ -21,10 +21,10 @@ div, p{
     border: 1px solid #ccc;
 }
 
-div:nth-child(-n+8){                 /* first child [if div]  =>> till eigth child */
+div:nth-child(-n+8){                 /* first child [if div]  =>> till [eigth child] */
     background-color: #ccc;
 }
 
-div:nth-of-type(-n+4){              /* first child [of-type]  =>> till fourth of-type */
+div:nth-of-type(-n+4){              /* first of type [if div]  =>> till [fourth of type] */
     background-color: chocolate;
 }

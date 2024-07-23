@@ -1,0 +1,32 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    font-size: 20px;
+}
+
+/*
+    * multi columns:
+        [1] column-rule: medium none color;         =>> default value
+        [2] column-width: auto;                     =>> default value
+
+        column-rule: width | style | color          =>> must use [column-count:] before
+*/
+
+div {
+    padding: 20px;
+    border: 1px solid #ccc;
+
+    column-count: 3;
+
+    column-rule: 7px solid #080;             /* short hand code */
+
+    /*
+    column-rule-width: 7px;
+    column-rule-style: solid;
+    column-rule-color: green;
+    */
+
+    /* column-width: 500px; */
+}

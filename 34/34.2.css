@@ -1,0 +1,65 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    font-size: 20px;
+}
+
+/*
+    * transition: property | duration | timing function | delay
+
+    [3] transition-timing-function: ease                =>> by default  [ease]
+                                    linear
+                                    ease-in
+                                    ease-out
+                                    ease-in-out
+                                    steps(2, start)
+                                    steps(2, end)
+
+    * [ease][linear][ease-in][ease-out][ease-in-out]    =>> equalize [specific speed curve] in [cubic bezier]
+
+    * transition-timing-function: steps(2)              =>> by default [end]    => 2 are the same
+    * transition-timing-function: steps(2, end)         =>> by default [end]    => 2 are the same
+
+    [4] transition-delay: 1s;                           =>> by default [0s]
+
+    * search:
+        =>> [css3beziercurve.net]                       =>> information about [cubic bezier]
+*/
+
+div{
+    width: 1000px;
+
+    /* transition: width 1s, background 3s; */              /* short hand code */
+    /* transition: all 1s; */                               /* short hand code */
+}
+
+div p{
+    color: #fff;
+    background-color: #f00;
+    width: 150px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+
+    transition-property: width, background;
+    transition-duration: 1s;
+
+    transition-delay: 0.3s;
+}
+
+div p:first-of-type{
+    transition-timing-function: steps(2, start);
+}
+div p:nth-of-type(2){
+    transition-timing-function: steps(2);                   /* [***] two are the same */
+}
+div p:last-of-type{
+    transition-timing-function: steps(2, end);              /* [***] two are the same */
+}
+
+div:hover p{
+    background-color: #00f;
+    width: 250px;
+}

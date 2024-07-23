@@ -43,14 +43,14 @@ challenges
 31- flex box: child  [flex-basis] [flex: flex-grow | flex-shrink | flex-basis]  =>> short hand code
 
 
-32- trnasition: 
-33- transition: 
-34- trnasition: 
-35- trnasition: 
+32- trnasition: intro & [short hand] code
+33- transition: [property] [duration]
+34- trnasition: [timing function] [delay]
+35- trnasition: Examples
 
-36- multi columns: 
-37- multi columns: 
-38- multi columns: 
+36- multi columns: [column-count] [column-gap]
+37- multi columns: [column-rule] [column-width]
+38- multi columns: [column-span] [column-fill] [columns]
 
 39- animation: animation intro & [keyframes]
 40- animation: [animation-name | animation-duration]

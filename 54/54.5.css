@@ -11,7 +11,7 @@
         [th] -> ordering number [1st] [2nd] [3rd] [4th] [5th]
 
     * nth(number, formula, keyword)
-    * keyword: [even] or [odd]
+    * keyword: [odd] or [even]
 */
 
 div, p{
@@ -30,7 +30,6 @@ div, p{
         =>> 2*4 + 1 = 9
         =>> 2*5 + 1 = 11
 */
-div:nth-last-child(2n+1){                    /* from end  =>> to start */
+div:nth-last-child(2n+1){                    /* count from last child */
     background-color: #ccc;
 }
-

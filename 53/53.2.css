@@ -11,7 +11,7 @@
         [th] -> ordering number [1st] [2nd] [3rd] [4th] [5th]
 
     * nth(number, formula, keyword)
-    * keyword: [even] or [odd]
+    * keyword: [odd] or [even]
 */
 
 div{
@@ -22,7 +22,7 @@ div{
 }
 
 div:nth-child(odd){
-    background-color: #eee;
+    background-color: blueviolet;
 }
 
 div:nth-child(even){

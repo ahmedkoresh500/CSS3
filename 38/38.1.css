@@ -1,0 +1,28 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    font-size: 20px;
+}
+
+/*
+    * multi columns:
+        [1] column-span: 1;                     = [column 1]  =>> default value
+        [2] 
+
+    * column-span:  [1] or [all]                =>> only 2 values
+*/
+
+div{
+    padding: 20px;
+    border: 1px solid #ccc;
+
+    column-count: 3;
+
+    column-rule: 7px solid #080;             /* short hand code */
+}
+
+div h1{
+    column-span: 1;                             /* not in columns */
+}

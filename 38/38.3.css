@@ -1,0 +1,33 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    font-size: 20px;
+}
+
+/*
+    * multi columns:
+        [1] column-span: 1;                     =>> default value
+        [2] column-fill:                        =>> supported in [firefox browser] only
+        [3] columns: auto auto;                 =>> default value
+
+    * column-span:  1                   =>> column 1            =>> only 2 values
+                    all                 =>> not in columns      =>> only 2 values
+
+    * columns: width | count;
+*/
+
+div{
+    padding: 20px;
+    border: 1px solid #ccc;
+
+    column-rule: 7px solid #080;            /* short hand code */
+
+    /* columns: auto auto; */                 /* default value */
+    columns: 400px 3;                         /* [400px]  =>> minimum width */
+}
+
+div h1{
+    column-span: all;                         /* not in columns */
+}

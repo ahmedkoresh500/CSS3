@@ -15,7 +15,7 @@ div{
         =>> end letters of the value
 */
 
-/* [class="osama"] = [class$="osama"] = [class$="ma"] = [class$="a"] */
+/* [class="osama"] = [class$="osama"] = [class$="ama"] = [class$="a"] */
 [class$="a"] {
     color: #f00;
 }
